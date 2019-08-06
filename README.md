@@ -14,16 +14,24 @@ About
 - [PlayStore](https://play.google.com/store/apps/developer?id=ARJUN+MOHNOT)
 
 ---------------------------------------------------------------------------
+
+<img width="226" alt="Capture" src="https://user-images.githubusercontent.com/33459977/62526941-d9f6b380-b857-11e9-8a93-048baa5b4243.PNG">
+
+
 ## What is Machine Learning?
 
+- ` Machine Learning is the study of algorithms that •improve their performance P•at some task T•with experience E.A well-defined learning task is given by <P, T, E>.`
 
-> > - “Machine learning is the next Internet” -Tony Tether, Director, DARPA
+> - “Machine learning is the next Internet” -Tony Tether, Director, DARPA
 ---
-> > - “Machine learning is the hot new thing” -John Hennessy, President, Stanford
+> - “Machine learning is the hot new thing” -John Hennessy, President, Stanford
 ---
-> > - “Machine learning is today’s discontinuity” -Jerry Yang, CEO, Yahoo
+> - “Machine learning is today’s discontinuity” -Jerry Yang, CEO, Yahoo
 ---
-> > - “Machine learning is the new electricity”-Andrew Ng, Chief Scientist Baidu
+> - “Machine learning is the new electricity”-Andrew Ng, Chief Scientist Baidu
+
+> ![65950590_702544676861606_2656840745836301205_n](https://user-images.githubusercontent.com/33459977/62526444-e29aba00-b856-11e9-856b-a817c0461b05.jpg)
+
 ---
 
 | Table of Content                                                  |
@@ -61,8 +69,8 @@ Cart
 - Use the Sklearn package to implement the CART Decision tree for the following data.
 After training, finally visualize the tree, print the importance of features (Gini values),
 properties of the tree such as number of leaves, depth of the tree etc.
-- Download 1 classification dataset (https://tinyurl.com/uciclass) and 1 regression
-dataset (https://tinyurl.com/ucireg) of your choice. Each of you should have unique
+- Download 1 classification dataset [uciclass](https://tinyurl.com/uciclass) and 1 regression
+dataset [ucireg](https://tinyurl.com/ucireg) of your choice. Each of you should have unique
 datasets with you.
 - Test the CART model with the samples and calculate the accuracy. Print the
 decision path for each of the samples.
