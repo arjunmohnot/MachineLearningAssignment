@@ -8,13 +8,13 @@ Stochastic Gradient Descent is an important and widely used algorithm in machine
 	Here is the raw data. The attribute x is the input variable and y is the output variable that is be to predicted by the model.
 
 
-	| X | Y |
-	|---|---|
-	| 1 | 1 |
-	| 2 | 3 |
-	| 4 | 3 |
-	| 3 | 2 |
-	| 5 | 5 |
+| X | Y |
+|---|---|
+| 1 | 1 |
+| 2 | 3 |
+| 4 | 3 |
+| 3 | 2 |
+| 5 | 5 |
 	
 
 - Below is a simple scatter plot of x versus y.
@@ -47,62 +47,62 @@ The relationship between x and y looks kind-of linear. As in, this could probabl
 	y = B0 + B1 * x
 
 # Gradient Descent Iteration #1
-- Let’s start with values of 0.0 for both coefficients.
-- B0 = 0.0
-- B1 = 0.0
-- y = 0.0 + 0.0 * x
-- Calculate the error for a prediction as follows:
-- error = p(i) – y(i)
-- Where p(i) is the prediction for the i’th instance in our dataset and y(i) is the i’th output variable for the instance in the dataset.
-- Calculate the predicted value for y using the starting point coefficients for the first training instance:
-- x=1, y=1
-- p(i) = 0.0 + 0.0 * 1
-- p(i) = 0
-- Using the predicted output, calculate the error:
-- error = 0 – 1
-- error = -1
-- Now use this error in our equation for gradient descent to update the weights. This will start with updating the intercept first, because it is easier.
-- B0 is accountable for all of the error. This is to say that updating the weight will use just the error as the gradient. Calculate the update for the B0 coefficient as follows:
-- B0(t+1) = B0(t) – alpha * error
-- Where B0(t+1) is the updated version of the coefficient will use on the next training instance, B0(t) is the current value for B0 alpha is our learning rate and error is the error. Calculate for the training instance. Let’s use a small learning rate of 0.01 and plug the values into the equation to work out what the new and slightly optimized value of B0 will be:
-B0(t+1) = 0.0 – 0.01 * -1.0
-B0(t+1) = 0.01
-- Now, let’s look at updating the value for B1. Use the same equation with one small change. The error is filtered by the input that caused it.Update B1 using the equation:
-B1(t+1) = B1(t) – alpha * error * x
-- Where B1(t+1) is the update coefficient, B1(t) is the current version of the coefficient, alpha is the same learning rate described above, error is the same error calculated above and x is the input value.
-- Plug in our numbers into the equation and calculate the updated value for B1:
-B1(t+1) = 0.0 – 0.01 * -1 * 1
-B1(t+1) = 0.01
-- Finished the first iteration of gradient descent and we have updated our weights to be B0=0.01 and B1=0.01. This process must be repeated for the remaining 4 instances from our dataset.
-- One pass through the training dataset is called an epoch.
+	- Let’s start with values of 0.0 for both coefficients.
+	- B0 = 0.0
+	- B1 = 0.0
+	- y = 0.0 + 0.0 * x
+	- Calculate the error for a prediction as follows:
+	- error = p(i) – y(i)
+	- Where p(i) is the prediction for the i’th instance in our dataset and y(i) is the i’th output variable for the instance in the dataset.
+	- Calculate the predicted value for y using the starting point coefficients for the first training instance:
+	- x=1, y=1
+	- p(i) = 0.0 + 0.0 * 1
+	- p(i) = 0
+	- Using the predicted output, calculate the error:
+	- error = 0 – 1
+	- error = -1
+	- Now use this error in our equation for gradient descent to update the weights. This will start with updating the intercept first, because it is easier.
+	- B0 is accountable for all of the error. This is to say that updating the weight will use just the error as the gradient. Calculate the update for the B0 coefficient as follows:
+	- B0(t+1) = B0(t) – alpha * error
+	- Where B0(t+1) is the updated version of the coefficient will use on the next training instance, B0(t) is the current value for B0 alpha is our learning rate and error is the error. Calculate for the training instance. Let’s use a small learning rate of 0.01 and plug the values into the equation to work out what the new and slightly optimized value of B0 will be:
+	B0(t+1) = 0.0 – 0.01 * -1.0
+	B0(t+1) = 0.01
+	- Now, let’s look at updating the value for B1. Use the same equation with one small change. The error is filtered by the input that caused it.Update B1 using the equation:
+	B1(t+1) = B1(t) – alpha * error * x
+	- Where B1(t+1) is the update coefficient, B1(t) is the current version of the coefficient, alpha is the same learning rate described above, error is the same error calculated above and x is the input value.
+	- Plug in our numbers into the equation and calculate the updated value for B1:
+	B1(t+1) = 0.0 – 0.01 * -1 * 1
+	B1(t+1) = 0.01
+	- Finished the first iteration of gradient descent and we have updated our weights to be B0=0.01 and B1=0.01. This process must be repeated for the remaining 4 instances from our dataset.
+	- One pass through the training dataset is called an epoch.
 
 # Gradient Descent Iteration #20
 	- Let’s jump ahead.
 	- You can repeat this process another 19 times. This is 4 complete epochs of the training data being exposed to the model and updating the coefficients.
 	- Here is a list of all of the values for the coefficients over the 20 iterations that you should see:
 
-	| B0 | B1 |
-	|----|----|
-	| 0.01 |	0.01|
-	| 0.0397 |	0.0694|
-	| 0.066527 |	0.176708|
-	| 0.08056049 |	0.21880847|
-	| 0.1188144616 |	0.410078328|
-	| 0.1235255337 |	0.4147894001|
-	| 0.1439944904 |	0.4557273134|
-	| 0.1543254529 |	0.4970511637|
-	| 0.1578706635 |	0.5076867953|
-	| 0.1809076171 |	0.6228715633|
-	| 0.1828698253 |	0.6248337715|
-	| 0.1985444516 |	0.6561830242|
-	| 0.2003116861 |	0.6632519622|
-	| 0.1984110104 |	0.657549935|
-	| 0.2135494035 |	0.7332419008|
-	| 0.2140814905 |0.7337739877|
-	| 0.2272651958 |	0.7601413984|
-	| 0.2245868879 |	0.7494281668|
-	| 0.219858174 |	0.7352420252|
-	| 0.230897491 |	0.7904386102|
+| B0 | B1 |
+|----|----|
+| 0.01 |	0.01|
+| 0.0397 |	0.0694|
+| 0.066527 |	0.176708|
+| 0.08056049 |	0.21880847|
+| 0.1188144616 |	0.410078328|
+| 0.1235255337 |	0.4147894001|
+| 0.1439944904 |	0.4557273134|
+| 0.1543254529 |	0.4970511637|
+| 0.1578706635 |	0.5076867953|
+| 0.1809076171 |	0.6228715633|
+| 0.1828698253 |	0.6248337715|
+| 0.1985444516 |	0.6561830242|
+| 0.2003116861 |	0.6632519622|
+| 0.1984110104 |	0.657549935|
+| 0.2135494035 |	0.7332419008|
+| 0.2140814905 |0.7337739877|
+| 0.2272651958 |	0.7601413984|
+| 0.2245868879 |	0.7494281668|
+| 0.219858174 |	0.7352420252|
+| 0.230897491 |	0.7904386102|
 
 20 iterations or 4 epochs is a nice round number and a good place to stop. You could keep going if you wanted.
 
