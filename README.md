@@ -38,7 +38,7 @@ About
 |-------------------------------------------------------------------|
 | 1. Assignment 1 - Getting familiar with Data types and Visualization |
 | 2. Assignment 2 - Decision Tree Part 1, 2 - ID3, Cart                |
-|                                                                   |   
+| 3. Assignment 3 - Linear Regression (Gradient Descent), Polynomial Regression and Decision Tree Regression       |   
 
 Assignment 1
 ================
@@ -77,3 +77,21 @@ decision path for each of the samples.
 - Load the data, pre-process the data. Split the dataset into training and testing sets
 using built-in sklearn functions. Build a CART model for classification as well as
 regression and do the procedure as in part 1.
+
+Assignment 3
+================
+
+- Encoding
+- Normalization
+- Data Splitting
+- Linear Regression Training: model based on gradient descent algorithm. Automatically initialize a linear regression model with n+1 parameters (n features and 1 bias)
+- Linear Regression, Polynomial Regression, Decision Tree Regression (Cart) using sklearn
+- Testing: Test the model with the test data and compute the mean squared error (MSE) for
+test data. 
+- Playing with the Model: You can try different strategies to see whether testing error comes
+down or not. Strategies can be different 
+  1. Initialization of parameters 
+  2. Encoding of features,
+  3. removal of some features, 
+  4. normalization methods, 
+  5. Shuffling of training samples. Check the model error for the testing data for each setup.
