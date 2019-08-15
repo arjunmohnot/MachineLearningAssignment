@@ -1,3 +1,5 @@
+**Article Courtesy** : [Jason Brownlee](https://machinelearningmastery.com/linear-regression-tutorial-using-gradient-descent-for-machine-learning/)
+
 Linear Regression
 ===
 
