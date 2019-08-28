@@ -38,7 +38,8 @@ About
 |-------------------------------------------------------------------|
 | 1. Assignment 1 - Getting familiar with Data types and Visualization |
 | 2. Assignment 2 - Decision Tree Part 1, 2 - ID3, Cart                |
-| 3. Assignment 3 - Linear Regression (Gradient Descent), Polynomial Regression and Decision Tree Regression       |   
+| 3. Assignment 3 - Linear Regression (Gradient Descent), Polynomial Regression and Decision Tree Regression       |
+| 4. Assignment 4 - Build Decision Tree Regression, Linear Regression and Polynomial Regression models through sklearn |
 
 Assignment 1
 ================
@@ -95,3 +96,14 @@ down or not. Strategies can be different
   3. removal of some features, 
   4. normalization methods, 
   5. Shuffling of training samples. Check the model error for the testing data for each setup.
+  
+ 
+ Assignment 4
+================
+
+- Encoding
+- Normalization
+- Data Splitting
+- All steps are almost same as done in assignment 3. It has more complex data as compared to above assignment. 
+- Ideal data as found in real life world.
+- Using Sklearn for predicting the Violent Crimes Per Population in USA.
